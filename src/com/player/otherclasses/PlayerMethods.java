@@ -1,9 +1,12 @@
 package com.player.otherclasses;
-
 import jaco.mp3.player.MP3Player;
 import java.io.File;
 import javax.swing.JFileChooser;
 import com.player.interfaces.*;
+/**
+ * PlayerMethods, contains the methods used for the program
+ * @author Daniel Eriksson
+ */
 
 
 public class PlayerMethods implements PlayerInterface{
@@ -41,7 +44,7 @@ public class PlayerMethods implements PlayerInterface{
 
 	/**
 	 * setter file
-	 * @param file
+	 * @param file contains the selected file
 	 */
 	public void setFile(File file) {
 		this.file = file;
@@ -56,11 +59,10 @@ public class PlayerMethods implements PlayerInterface{
 	
 	/**
 	 * setter fileName 
-	 * @param fileName
+	 * @param fileName contains the name of the selected file
 	 */
 	public void setFileName(String fileName) {
 		this.fileName = fileName;
-		System.out.println(fileName);
 	}
 
 	/**
@@ -73,7 +75,7 @@ public class PlayerMethods implements PlayerInterface{
 
 	/**
 	 * setter Mp3Player
-	 * @param mp3Player
+	 * @param mp3Player mp3player is saved here for use 
 	 */
 	public void setMp3Player(MP3Player mp3Player) {
 		this.player = mp3Player;
@@ -91,10 +93,13 @@ public class PlayerMethods implements PlayerInterface{
 		player.pause();
 	}
 	/**
-	 * stops the file selected
+	 * stops the file selected, sets file as a nonselected file and sets the string name to ""
 	 */
 	public void	stop(){
 		player.stop();
+		setFile(new File(""));
+		setMp3Player(new MP3Player(file));
+		setFileName("");
 	}
 	
 }
