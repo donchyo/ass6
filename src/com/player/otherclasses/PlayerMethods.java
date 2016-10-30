@@ -11,9 +11,9 @@ import com.player.interfaces.*;
 
 public class PlayerMethods implements PlayerInterface{
 	//creates a File that we can store our file in.
-	File file = new File("");
+	private File file = new File("");
 	//creates a mp3 player with file
-	MP3Player player = new MP3Player(file);
+	private MP3Player player = new MP3Player(file);
 	//creates a JFileChooser
 	final JFileChooser fileChooser = new JFileChooser();
 	//String to Store the filename of the file for usage in nowplaying/windowtitle

@@ -27,7 +27,7 @@ public class ViewClass extends JFrame implements ActionListener{
 	private JLabel relevantXkcd = new JLabel(); 
 	
 	//string that holds the text for the title of the window
-	private String title = "Mp3Player";
+	private String title = "Mp3 Player";
 	
 	//creates a new PlayerMethods object
 	PlayerMethods PM = new PlayerMethods();
