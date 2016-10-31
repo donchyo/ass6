@@ -113,7 +113,7 @@ public class ViewClass extends JFrame implements ActionListener{
 
 		setTitle(title);
 		setSize(465, 230); //465x230
-		setVisible(true);
+		//setVisible(true);
 		getContentPane().setLayout(null);
 
 		createButtons();
