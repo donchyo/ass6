@@ -106,14 +106,14 @@ public class ViewClass extends JFrame implements ActionListener{
 	}
 	
 	/**
-	 * creates the frame, sets it visible, sets layout to null, calls, createButtons and createLabels
+	 * creates the frame, sets layout to null, calls, createButtons and createLabels
 	 */
 	public void createUI() {
 		// Setting some properties of the application
 
 		setTitle(title);
 		setSize(465, 230); //465x230
-		//setVisible(true);
+		
 		getContentPane().setLayout(null);
 
 		createButtons();
